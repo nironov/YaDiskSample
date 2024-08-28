@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% block content %}
+
+
+<div class="p-4 col-4">
+    <form method="post">
+        {% csrf_token %}
+        <div class="mb-3">
+            <label for="public_key_input" class="form-label">Введите public key</label>
+            <input type="text" class="form-control" name='public_key_input' id="public_key_input" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+
+{% endblock content %}
